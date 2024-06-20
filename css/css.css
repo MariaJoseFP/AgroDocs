@@ -1,0 +1,113 @@
+body {
+    padding-top: 60px;
+    /* Ajusta según la altura de tu barra de navegación si la tienes */
+    font-size: small;
+
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.no-escalar:hover {
+    transform: none;
+    /* Anula el efecto de escala en las tarjetas con la clase .no-escalar */
+}
+
+.oculto {
+    display: none;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+
+.card-constancia>label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-guia>p {
+    font-weight: bold;
+}
+
+/* Estilo básico para la imagen oculta */
+#imagenFormato {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+
+/* Estilo para el botón */
+#btnDescargar {
+    position: relative;
+}
+
+/* Al pasar el ratón sobre el botón, muestra la imagen */
+#btnDescargar:hover #imagenFormato {
+    display: block;
+}
+
+.destacar-form {
+    background-color: azure;
+}
+
+.btn-cancelar-const,
+.btn-cancelar-guia {
+    font-size: 1em;
+    width: 5em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_cards_bd>img {
+    display: none;
+}
+
+.imgBd {
+    width: 60%;
+}
+
+
+
+/* Aumentando la especificidad para sobrescribir el estilo de Bootstrap */
+nav.navbar {
+    background-color: #324759;
+    /* Este estilo tendrá prioridad sobre el estilo de Bootstrap */
+}
+
+nav.navbar .navbar-brand
+{
+    color: #fff !important;
+    /* Asegúrate de que el color de la letra tenga mayor prioridad */
+}
+
+body {
+    background-color: #F0F2F2;
+
+}
+
+#tabla-programacion, td{
+    background-color: #FAFAFA !important;
+}
+
+/*
+th,td{
+    background-color: #fff !important;
+}
+*/
+
